@@ -1,6 +1,17 @@
 <center>
   <form>
 <label><span style="font-family: arial;"> welcome to felix29 pay</span></label><br />
-<input id="pay" name="pay" type="number" /> <input type="reset" value="pay"/>
+<input id="pay" name="pay" type="number" /> <input type="reset" value="pay" onclick="toggleText()"/>
+    <p id='pay' style='display: none'>tnanks for paying</p>     
   </form>
 </center> 
+<script>
+function toggleText() {
+  var text = document.getElementById("thanks");
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+</script>
